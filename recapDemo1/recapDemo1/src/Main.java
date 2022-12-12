@@ -16,7 +16,7 @@ public class Main {
         if (enbuyuk < sayi3) {
             enbuyuk = sayi3;
         }
-        System.out.println("En büyük = " + enbuyuk);
+        System.out.println("En buyuk = " + enbuyuk);
 
     }
 }
