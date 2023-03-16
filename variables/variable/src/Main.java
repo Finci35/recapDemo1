@@ -10,10 +10,10 @@ public class Main {
         String mesaj = "Ögrenci Sayısı :"; // Burada "mesaj" isminde bir değişken tanımladık.
 
         System.out.println("Ögrenci sayım : " + ogrenciSayisi);
-
         System.out.println(mesaj + ogrenciSayisi);
 
         System.out.println("Ögrenci sayım : 9");
         System.out.println("Ögrenci sayım : 9");
+
     }
 }
