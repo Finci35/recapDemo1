@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="conditionals_sartlar/conditionals_sartlar/src"/>
+	<classpathentry kind="src" path="javaHelloWorld/src"/>
+	<classpathentry kind="src" path="LF08V2/src"/>
+	<classpathentry kind="src" path="loopDemo_donguler/src"/>
+	<classpathentry kind="src" path="recapDemo1/recapDemo1/src"/>
+	<classpathentry kind="src" path="switchDemo/src"/>
+	<classpathentry kind="src" path="TEST_LZK/src"/>
+	<classpathentry kind="src" path="variables/datatypes/src"/>
+	<classpathentry kind="src" path="variables/variable/src"/>
+	<classpathentry kind="output" path="LF08V2/out/production/LF08V2"/>
+</classpath>
