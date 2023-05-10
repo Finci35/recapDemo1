@@ -26,7 +26,10 @@ public class Kreisberechnung {
 		//System.out.println(radius);
 		
 		try { // Versuche etwas zu machen.
-			radius = Double.parseDouble(eingabe);
+			radius = Double.parseDouble(eingabe); /*Bu kod, "eingabe" adlı bir string değişken içinde depolanan
+			sayısal bir değeri çift hassasiyetli bir kayan nokta sayısına dönüştürür ve "radius" adlı bir double
+			değişkenine atar. Bu tür dönüşümler genellikle kullanıcı girişi veya veritabanından alınan veriler gibi
+			dış kaynaklardan alınan verileri programın kullanabileceği bir formata dönüştürmek için kullanılır.*/
 			System.out.println(radius);
 		} catch(Exception ex) { // Fange einen möglihen Fehler ab.
 			
@@ -55,6 +58,7 @@ public class Kreisberechnung {
 		
 		JOptionPane.showMessageDialog(null, String.format("Umfang: %.2f Flaäche: %.2f", umfang, flaeche));
 		// Sonucu metin kutusunda gösterir.
+				
 	}
 
 }
