@@ -12,11 +12,15 @@ public class Zahlendreieck {
 			i++;
 		}
 		
+		System.out.println("----------------------------------------------------------------------------------------------------------");
+		
 		for(int z=0; z<10; z++) {
-			for(int s=0; s-1<z; s++);
-			System.out.print(s);
+			for(int s = 0; s - 1 < z; s++) {
+				System.out.print(s + " ");
+			}
+			System.out.println();					
 		}
-
+		
 	}
 
 }
