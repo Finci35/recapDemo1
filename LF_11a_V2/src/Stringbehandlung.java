@@ -18,6 +18,13 @@ public class Stringbehandlung {
     
     System.out.println(text.substring(1,3)); //Erstellt Ausschnitt des ursprünlichen String
                          //Startindex: inklusive, Endindex: exklusive
+/*
+`substring()` yöntemi kullanılarak `text` değişkeninin belirtilen bir alt dizesi alınır ve ekrana yazdırılır.
+
+`substring()` yöntemi, bir `String` nesnesinin belirli bir alt dizisini döndürmek için kullanılır. İlk parametre, alt dizenin başlangıç konumunu belirten bir tamsayıdır ve ikinci parametre, alt dizenin son konumunu belirten bir tamsayıdır (bu konum dahil değildir).
+
+Yukarıdaki örnek kodda, `text.substring(1,3)` ifadesi çağrılmıştır. Bu ifade, `text` değişkeninin 1. konumundan başlayarak 3. konuma kadar olan (3. konum dahil değil) alt diziyi alır. Bu alt dize "al" olduğundan, `System.out.println()` ifadesi "al" `String` nesnesini ekrana yazdırır.
+ * */
     
     //Hallo
     //01234
@@ -29,17 +36,44 @@ public class Stringbehandlung {
     
     System.out.println(a==c); // true
     
+/*
+ Bu kodda, önce `String` sınıfından `a` ve `b` olmak üzere iki yeni `String` nesnesi oluşturulur ve her biri "Paul" metnini içerir. Daha sonra, `c` değişkeni, `a` değişkeninin değerine atanır.
+
+`==` operatörü, referansları karşılaştırmak için kullanılır. Bu nedenle, `a==b` ifadesi `false` sonucunu verir,
+çünkü `a` ve `b` farklı referanslara sahip iki farklı `String` nesnesidir ve içerikleri aynı olsa bile, referansları farklıdır.
+
+Öte yandan, `a` ve `c` aynı `String` nesnesine referans gösterdikleri için, `a==c` ifadesi `true` sonucunu verir.
+
+Bu durum, `String` nesnelerinin nasıl çalıştığını anlamak açısından önemlidir.
+`String` nesneleri immutable (değiştirilemez) olduğu için, bir `String` nesnesi oluşturulduktan sonra,
+ona referans gösteren değişkenlerin içeriği değiştirilemez. Bu nedenle, iki `String` nesnesi aynı içeriğe sahip olsa bile, farklı referanslara sahip olabilirler.
+ */
+    
     System.out.println(a.equals(b)); //true
+/*
+equals() yöntemi, String nesnelerinin içeriklerinin karşılaştırılması için kullanılır.
+İki String nesnesi aynı içeriğe sahipse, equals() yöntemi true sonucunu verir.
+Bu nedenle, a ve b değişkenleri "Paul" metnini içerdiği için, a.equals(b) ifadesi true sonucunu verir.
+*/
     
     System.out.println(a.compareTo(b));
+/*
+Bu kod, `String` sınıfından oluşturulan `a` ve `b` değişkenlerinin alfabetik olarak karşılaştırılması için `compareTo()` yöntemini kullanır ve sonucu ekrana yazdırır.
+
+`compareTo()` yöntemi, iki `String` nesnesinin alfabetik olarak karşılaştırılması için kullanılır. Bu yöntem, karşılaştırılan iki `String` nesnesinin ilk karakterlerini karşılaştırır. Eğer karakterler aynıysa, ikinci karakterlere geçilir ve bu işlem devam eder. Eğer farklı bir karakter bulunursa, bu karakterlerin ASCII değerleri karşılaştırılır ve sonuç bu değere göre belirlenir. `compareTo()` yöntemi, bu karşılaştırmayı yaparak, karşılaştırılan `String` nesnelerinin sıralamasını belirler.
+
+Eğer `a` ve `b` değişkenleri aynı metni içeriyorsa, `compareTo()` yöntemi `0` sonucunu verir. Eğer `a` değişkenindeki metin, `b` değişkenindeki metinden alfabetik olarak önce geliyorsa, `compareTo()` yöntemi negatif bir değer döndürür. Eğer `a` değişkenindeki metin, `b` değişkenindeki metinden alfabetik olarak sonra geliyorsa, `compareTo()` yöntemi pozitif bir değer döndürür.
+
+Örneğin, `a` ve `b` değişkenleri "Paul" metnini içerdiği için, `a.compareTo(b)` ifadesi `0` sonucunu verecektir.
+*/
     
     
     String d = "Bert";
     String e = "Yasar";
     
-    System.out.println(a.compareTo(d));
-    System.out.println(a.compareTo(e));
-    System.out.println(a.compareTo(b));
+    System.out.println(a.compareTo(d)); // 14
+    System.out.println(a.compareTo(e)); // -9
+    System.out.println(a.compareTo(b)); // 0
     
     String f = "Hallo ";
     String g = "Welt";

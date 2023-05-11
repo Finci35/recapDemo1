@@ -62,6 +62,16 @@ public class Zahlendreiek_2 {
 	            System.out.println(" ");//Döngüden sonra diğer satıra atlamamızı sağlar.
 	        }
 	        
+	        int m = 0;
+	        do {
+	        	m = m++ + --m - (m%3);
+	        	System.out.println(m);
+	        } while (++m<1);
+	        System.out.println(m);
+	        
+	        int n = 0;
+	        System.out.println(--n);
+	        
 	}
 
 }
