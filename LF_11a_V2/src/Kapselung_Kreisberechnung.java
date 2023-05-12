@@ -3,37 +3,38 @@ import javax.swing.JOptionPane;
 public class Kapselung_Kreisberechnung {
 				
 		private double radius;
-		private double umfang;
-		private double flaeche;
-				
 		
 		
 		
 		
+		public void getRadiusFromInput() throws NumberFormatException {
+			
+			this.radius = Double.parseDouble(JOptionPane.showInputDialog("Radius:"));
+			
+		}
 		
+		// Flaeche nicht als Klassenvariable vorhanden; flaeche -> virtuelles Attribut
+		public double getFlaeche() {
+			return Math.PI * Math.pow(this.radius, 2);
+		}
 		
+		// Umfang nicht als Klassenvariable vorhanden; umfang -> virtuelles Attribut
+		public double getUmfang() {
+			return 2* Math.PI * this.radius;
+		}
+		
+		// radius:
 		public void setRadius(double radius) {
 			this.radius = radius;
+/*	 		"this.radius" yukarıda tanımlanan "private double radius"u belirtir.
+			Diğer radius yeni ulşturulan bir tanımdır.
+			Radius yerine başka bir isim de verilebilir. */
 		}
 		
 		public double getRadius() {
-			return radius;
+			return this.radius;
 		}
 		
-		public double getUmfang() {
-			return umfang;
-		}
-		
-		public double getFlaeche() {
-			return flaeche;
-		}
-		
-		public void berehnen() {
-			umfang = 2 * Math.PI * radius;
-			flaeche = Math.PI * Math.pow(radius, 2);
-		}
-
-
 }
 		
 		
