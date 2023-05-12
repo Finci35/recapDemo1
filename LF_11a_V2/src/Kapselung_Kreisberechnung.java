@@ -4,15 +4,12 @@ public class Kapselung_Kreisberechnung {
 				
 		private double radius;
 		
-		
-		
-		
-		public void getRadiusFromInput() throws NumberFormatException {
-			
-			this.radius = Double.parseDouble(JOptionPane.showInputDialog("Radius:"));
-			
+		public Kapselung_Kreisberechnung() {
+			this.radius = 1;
+//			System.out.println("Objekt von Kapselung_Kreisberechnung wurde erstellt.");
 		}
 		
+			
 		// Flaeche nicht als Klassenvariable vorhanden; flaeche -> virtuelles Attribut
 		public double getFlaeche() {
 			return Math.PI * Math.pow(this.radius, 2);
@@ -29,6 +26,14 @@ public class Kapselung_Kreisberechnung {
 /*	 		"this.radius" yukarıda tanımlanan "private double radius"u belirtir.
 			Diğer radius yeni ulşturulan bir tanımdır.
 			Radius yerine başka bir isim de verilebilir. */
+		}
+		
+		public void setRadius(int radius) {
+			this.radius = radius;
+		}
+
+		public void setRadius(String radius) throws Exception {
+			this.radius = Double.parseDouble(radius);
 		}
 		
 		public double getRadius() {
