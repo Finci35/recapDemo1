@@ -77,10 +77,10 @@ public class listenTest {
 		System.out.println(names.size());
 		
 		for(String s: names) {
-			System.out.print(s + " ");
+			System.out.println(s + " ");
 		}
 		
-		System.out.println(names.contains("Peter"));
+		System.out.println(names.contains("Peter")); // Contains beantwortet mit True/False das Vorhandensein eines Wertes.
 	
 		
 		
