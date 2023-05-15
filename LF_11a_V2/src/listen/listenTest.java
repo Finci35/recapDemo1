@@ -66,10 +66,28 @@ public class listenTest {
 		System.out.println(names.get(1)); // auswählen eines Elementes mit get() - ArrayList ist 0-indexiert.
 		
 		System.out.println(names.get(2));
-		names.set(2, "Bernd");
+		names.set(2, "Bernd");			//	mit set kann ein Element an einem bestimmten Index geändert werden.
 		System.out.println(names.get(2));
 		
 		
+		System.out.println(names.size());
+		System.out.println(names.get(0));
+		names.remove(0);					//	Entfernt Element an Index
+		System.out.println(names.get(0));
+		System.out.println(names.size());
+		
+		for(String s: names) {
+			System.out.print(s + " ");
+		}
+		
+		System.out.println(names.contains("Peter"));
+	
+		
+		
+		
+		System.out.println(names.size());
+		//names.clear();					//	Löscht alle Werte in der ArrayList
+		System.out.println(names.size());
 	}
 	
 
