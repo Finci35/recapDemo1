@@ -1,4 +1,4 @@
-package Vererbung;
+package Vererbung_Baum;
 public class Birke extends Baum{ // Vererbung extends ile yapılır. extends zum Vererben
 	
 	

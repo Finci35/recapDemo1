@@ -1,4 +1,4 @@
-package Vererbung;
+package Vererbung_Baum;
 
 public abstract class Baum { // abstract => Instanzen von Baum können nicht erstellt werden.
 //public final class Baum { // final: diese Klasse kann nicht weiter vererben. final verhindert, dass die Klasse vererbt werden kann.

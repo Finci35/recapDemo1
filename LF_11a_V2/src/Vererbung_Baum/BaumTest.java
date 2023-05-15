@@ -1,4 +1,4 @@
-package Vererbung;
+package Vererbung_Baum;
 
 public class BaumTest {
 
