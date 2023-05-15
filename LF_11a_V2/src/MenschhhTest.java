@@ -1,12 +1,12 @@
 import javax.swing.JOptionPane;
 
-public class MenschTest {
+public class MenschhhTest {
 
 	public static void main(String[] args) {
 		
-		Mensch m1 = new Mensch();
-        Mensch m2 = new Mensch("Mustermann");
-        Mensch m3 = new Mensch("Musterman", "Max");
+		Menschhh m1 = new Menschhh();
+        Menschhh m2 = new Menschhh("Mustermann");
+        Menschhh m3 = new Menschhh("Musterman", "Max");
         
         System.out.println(m1); // Ausgabe: unbekant, unbekant
         System.out.println(m2); // Ausgabe: Mustermann, unbekant

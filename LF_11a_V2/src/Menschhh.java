@@ -5,7 +5,7 @@
 // Ausgabe auf Objekt Mensch soll "Name, Vorname" erzeugen
 // Mindestens 3 Konstruktoren sollen erstellt werden. KOnstruktoren sollen verkettet werden.
 
-public class Mensch {
+public class Menschhh {
 	
 	private String vorname;
 	private String nachname;
@@ -15,15 +15,15 @@ public class Mensch {
      // Konstruktoren;
     
 
-/*3*/   public Mensch() {
+/*3*/   public Menschhh() {
             this("unbekant", "unbekant");
         }
     
-/*2*/   public Mensch(String nachname) {
+/*2*/   public Menschhh(String nachname) {
 			this(nachname, "unbekant");
 		}
 
-/*1*/   public Mensch(String nachname, String vorname) {
+/*1*/   public Menschhh(String nachname, String vorname) {
             this.nachname = nachname;
             this.vorname = vorname;
             this.haarfarbe = "unbehaart";
