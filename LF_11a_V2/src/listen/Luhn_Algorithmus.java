@@ -1,19 +1,18 @@
 package listen;
 
 public class Luhn_Algorithmus {
-
 	
 	public static boolean Prüfziffernberechnung(String Kreditkartennummer) {
         int summe = 0;
         boolean ungerade = false;
         
-        // Adımlar 1 ve 3
+        // Schritt 1 und 3
         for (int i = Kreditkartennummer.length() - 1; i >= 0; i--) {
             int ziffer = Integer.parseInt(Kreditkartennummer.substring(i, i + 1));
-            
+            //Schritt 1
             if (ungerade) {
                 ziffer *= 2;
-                
+             // Schritt 3
                 if (ziffer > 9) {
                     ziffer = (ziffer % 10) + 1;
                 }
@@ -23,7 +22,7 @@ public class Luhn_Algorithmus {
             ungerade = !ungerade;
         }
         
-        // Adımlar 2 ve 4
+        // Schritt 2 und 4
         if (summe % 10 == 0) {
             return true;
         } else {
@@ -31,15 +30,10 @@ public class Luhn_Algorithmus {
         }
     }
 	
-	
-	
 	public static void main(String[] args) {
-
-		
-		String Kreditkartennummer = "2719271428458567";
+		String Kreditkartennummer = "2718281828458567";
         boolean isValid = Prüfziffernberechnung(Kreditkartennummer);
         System.out.println(isValid);
-		
 	}
 
 	
@@ -48,7 +42,7 @@ public class Luhn_Algorithmus {
 
 1. `LuhnAlgorithm` adında bir sınıf tanımlanır.
 2. `checkCreditCardNumber` adında bir static metot tanımlanır. Bu metot, bir `String` tipinde kredi kartı numarası alır ve sonucu `boolean` tipinde döndürür.
-3. `sum` ve `alternate` isimli iki değişken tanımlanır. `sum` değişkeni sonucun tutulacağı değişken olacaktır, `alternate` değişkeni ise, `digit` değişkeninin 2 ile çarpılması gerekip gerekmediğini belirleyen bir değişkendir.
+3. `summe` ve `ungerade` isimli iki değişken tanımlanır. `summe` değişkeni sonucun tutulacağı değişken olacaktır, `ungerade` değişkeni ise, `ziffer` değişkeninin 2 ile çarpılması gerekip gerekmediğini belirleyen bir değişkendir.
 4. For döngüsü, verilen kredi kartı numarasının her bir basamağına sırayla erişmek için kullanılır. Döngü, kredi kartı numarasının sağdan sola doğru taranması için kullanılır.
 5. Döngünün her adımında, `digit` adında bir değişken tanımlanır ve kredi kartı numarasının o anki basamağına eşitlenir.
 6. Döngüdeki `if` bloğu, `alternate` değişkeninin `true` olup olmadığını kontrol eder. `alternate` değişkeni, sırayla çift ve tek basamaklı sayıları işlemek için kullanılır.

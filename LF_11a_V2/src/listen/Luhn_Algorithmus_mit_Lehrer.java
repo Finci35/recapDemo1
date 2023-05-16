@@ -1,6 +1,6 @@
 package listen;
 
-public class Luhn {
+public class Luhn_Algorithmus_mit_Lehrer {
 
 	public static void main(String[] args) {
 		
