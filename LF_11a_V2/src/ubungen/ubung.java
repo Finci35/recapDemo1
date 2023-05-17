@@ -12,6 +12,19 @@ public class ubung {
 				i++; 
 			} 
 		} 
+		
+		System. out. println() ; 
+		
+		StringBuilder sb = new StringBuilder(); 
+		sb.append( "World" ); 
+		sb.insert(0, "Hello " );
+			System. out. println(sb) ; 
+		
+
+		System. out. println() ; 
+		
+		
+		
 	}
 
 }
