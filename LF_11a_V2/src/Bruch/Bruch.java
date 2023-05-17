@@ -1,9 +1,6 @@
 package Bruch;
 
-/**
- *
- * @author Administrator
- */
+
 public class Bruch {
     int zaehler; // Objektvariable
     int nenner; // Objektvariable
