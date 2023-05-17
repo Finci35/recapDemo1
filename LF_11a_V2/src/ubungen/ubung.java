@@ -61,6 +61,19 @@ public class ubung {
 		}
 		System.out.println(sum);
 		
+		
+		String[] table1 = {"aa", "bb", "cc", "dd"};
+
+		for(String s : table1){
+			if ("bb".equals(s)) {
+				continue;
+			}		
+			System.out.println(s); 
+			if ("cc" .equals(s)) { 
+				break; 
+			}
+		}
+		
 	}
 	
 	
