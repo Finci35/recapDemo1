@@ -14,7 +14,7 @@ public class listenTest {
 		
 		System.out.println(namen[0]); // Arrays sind 0-Indexiert.
 		
-		namen[1] = "Paul";
+		namen[1] = "Paulina";
 		namen[2] = "Peter";
 		namen[4] = "Getrude";
 		
